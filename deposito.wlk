@@ -29,7 +29,9 @@ class Deposito{
   }
 
   method cargaTotalDeBicisLargas(){
-    return self.biciLarga().sum({bici => bici.carga()})
+    if (not self.biciLarga().isEmpty()) {
+      self.biciLarga().sum({bici => bici.carga()})
+    }
   }
 
   method cantidadBiciSinAccesorios(){
@@ -41,6 +43,6 @@ class Deposito{
   }
 
   method seHizoLaLuz(){
-    
+    // es un quilombo hacer este punto, igual no es requerido
   }
 }
