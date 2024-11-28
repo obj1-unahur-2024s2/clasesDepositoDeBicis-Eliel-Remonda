@@ -39,4 +39,8 @@ class Deposito{
   method esbiciCompanieraDe(otraBici){
     return bicicletas.filter({bici => bici.esbiciCompanieraDe(otraBici)})
   }
+
+  method seHizoLaLuz(){
+    
+  }
 }
